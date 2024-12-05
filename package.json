@@ -1,0 +1,20 @@
+{
+  "name": "scrappio",
+  "version": "1.0.0",
+  "description": " A github bio scrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "objects-to-csv": "^1.3.6",
+    "puppeteer": "^23.10.1",
+    "yargs": "^17.7.2"
+  },
+  "bin": {
+    "scrappio": "./cli.js"
+  }
+}
