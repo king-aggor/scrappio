@@ -20,7 +20,7 @@ yargs
       try {
         const userBio = await scrape(argv.userName);
         const filePath = "bio data.csv";
-        //create if not exists
+        //create file pathif not exists
         if (!fs.existsSync(filePath)) {
           fs.writeFileSync(filePath, "");
         }
@@ -50,7 +50,7 @@ yargs
           return;
         }
 
-        //write to an csv file
+        //write to a csv file
         const bioData = { username: argv.userName, bio: userBio };
         const csv = new ObjectsToCsv([...existingData, bioData]);
         await csv.toDisk(filePath);
