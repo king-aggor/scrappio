@@ -33,7 +33,7 @@ npm link
 ## Usage
 
 ```bash
-scrappio --userName=<username>
+scrappio scrape --userName=<username>
 ```
 
 ### options
